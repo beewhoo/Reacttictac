@@ -1,5 +1,90 @@
+
 body {
-  margin: 0;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  color: white;
+
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 100%,
+      rgba(0, 0, 0, 0.5) 100%),
+    linear-gradient(
+      to bottom,
+      #296dd6,
+      #d03bdd);
+      height: 100vh;
+
+}
+
+h1 {
+  color:red;
+  margin-top: 2em;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.errors {
+  background: #c00;
+  color: #fff;
+  display: none;
+  margin: -20px -20px 20px;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #fff;
+  float: left;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 90px;
+  margin-right: -1px;
+  margin-top: -1px;
   padding: 0;
-  font-family: sans-serif;
+  text-align: center;
+  width: 90px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+ol {
+  font-weight: normal;
+  list-style: none;
+}
+
+li  {
+  list-style: none;
+}
+
+a {
+  color: white;
+}
+
+
+.game-board{
+  display: inline-block;
+}
+.game-info {
+  font-weight: bold;
+}
+
+.game-info div  {
+  font-size: 1.5em;
+
 }
