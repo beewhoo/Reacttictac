@@ -19,7 +19,8 @@ body {
 
 h1 {
   color:red;
-  margin-top: 2em;
+  margin-top: 0;
+  font-size: 3em;
 }
 
 .board-row:after {
@@ -53,6 +54,7 @@ h1 {
   padding: 0;
   text-align: center;
   width: 90px;
+  color:purple;
 }
 
 .square:focus {
@@ -66,6 +68,15 @@ h1 {
 ol {
   font-weight: normal;
   list-style: none;
+  padding: 0;
+}
+
+li:first-child  {
+  font-size: 1.3em;
+  border:1px solid white;
+  display: inline-block;
+  padding: .3em;
+  margin-bottom: 1em;
 }
 
 li  {
@@ -74,6 +85,7 @@ li  {
 
 a {
   color: white;
+  text-decoration: none;
 }
 
 
@@ -86,5 +98,8 @@ a {
 
 .game-info div  {
   font-size: 1.5em;
+  color: lightgreen;
+  margin-top: 1em;
+
 
 }

@@ -13,18 +13,20 @@ class Game extends Component {
       ],
       step:0,
       xIsNext: true
+
     };
   }
 
   handleClick(i) {
     const history = this.state.history.slice(0, this.state.step +1);
-    console.log(history);
+
     const current = history[history.length - 1];
     const squares = current.squares.slice()
     if (calculateWinner(squares) || squares[i]) {
       return;
     }
     squares[i] = this.state.xIsNext ? "X" : "O";
+  
     this.setState({
       history: history.concat([
         {
