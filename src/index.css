@@ -1,8 +1,11 @@
 
 body {
-  font-family: 'Roboto',sans-serif;
+  font-family: 'Indie Flower', cursive;
   text-align: center;
   color: white;
+  font-size: 1.5em;
+  background-size: cover;
+  height:100vh;
 
   background:
     linear-gradient(
@@ -13,14 +16,16 @@ body {
       to bottom,
       #296dd6,
       #d03bdd);
-      height: 100vh;
+
+
 
 }
 
 h1 {
   color:red;
-  margin-top: 0;
-  font-size: 3em;
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .board-row:after {
@@ -48,13 +53,13 @@ h1 {
   font-size: 70px;
   font-weight: bold;
   line-height: 34px;
-  height: 90px;
+  height: 100px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 90px;
-  color:purple;
+  width: 100px;
+  color:grey;
 }
 
 .square:focus {
@@ -80,13 +85,12 @@ li:first-child  {
   background: rgba(255, 255, 255, 0.7);
 }
 
+
 li:first-child a{
   color: purple;
 }
 
-li  {
-  list-style: none;
-}
+
 
 a {
   color: white;
@@ -104,7 +108,7 @@ a {
 .game-info div  {
   font-size: 1.5em;
   color: lightgreen;
-  margin-top: 1em;
+
 
 
 }

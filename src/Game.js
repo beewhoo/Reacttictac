@@ -26,7 +26,7 @@ class Game extends Component {
       return;
     }
     squares[i] = this.state.xIsNext ? "X" : "O";
-  
+
     this.setState({
       history: history.concat([
         {
@@ -71,7 +71,7 @@ class Game extends Component {
 
     return (
       <div>
-      <h1>Tic Tac Toe</h1>
+      <h1>Tic-Tac-Toe</h1>
 
       <div className="game">
 
